@@ -21,6 +21,10 @@ button {
 ul {
     list-style: none;
 }
+img {
+    display: block;
+    width: 100%;
+}
 .container {
     max-width: 1024px;
     margin: auto;
@@ -77,7 +81,41 @@ header.active nav {
     transform: translateX(0);
     opacity: 1;
 }
-
+main {
+    padding: 40px 0;
+}
+main .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+main .container > * {
+    color: #212121;
+    background: #ccf3ee;
+    padding: 20px;
+}
+main h1 {
+    font-size: 36px;
+}
+main a {
+    color: #212121;
+}
+.content figure {
+    display: flex;
+    justify-content: center;
+}
+.content img {
+    padding: 20px 0;
+    max-width: 400px;
+}
+.content p {
+    padding-bottom: 20px;
+}
+.sidebar li {
+    padding-top: 10px;
+    padding-left: 10px;
+    font-weight: 700;
+}
 @media (min-width: 576px) {
     header {
         padding: 0 30px;
@@ -98,6 +136,10 @@ header.active nav {
     header button {
         display: none;
     }
+
+    main {
+        padding: 40px 30px;
+    }
 }
 @media (min-width: 768px) {
     header {
@@ -105,5 +147,17 @@ header.active nav {
     }
     header li {
         padding-left: 40px;
+    }
+    main {
+        padding: 40px;
+    }
+    main .container {
+        flex-direction: row;
+    }
+    .content {
+        width: 100%;
+    }
+    .sidebar {
+        width: 360px;
     }
 }
