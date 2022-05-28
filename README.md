@@ -1,2 +1,2 @@
-# buahpedia
-A simple static web that shows about fruits
+# Buahpedia
+A simple static web that provides information about fruits.
