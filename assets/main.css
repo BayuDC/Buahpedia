@@ -114,10 +114,14 @@ main a {
 .content p {
     padding-bottom: 20px;
 }
-.sidebar li {
-    padding-top: 10px;
-    padding-left: 10px;
+.sidebar img {
+    margin: 10px 0;
+}
+.sidebar li:nth-child(1) {
     font-weight: 700;
+}
+.sidebar li {
+    padding-top: 6px;
 }
 footer {
     display: flex;
